@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEF6BDCE1638885C00F6FB23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6BDCD1638885C00F6FB23 /* UIKit.framework */; };
+		BEF6BDD01638885C00F6FB23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6BDCF1638885C00F6FB23 /* Foundation.framework */; };
+		BEF6BDD21638885C00F6FB23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6BDD11638885C00F6FB23 /* CoreGraphics.framework */; };
+		BEF6BDD81638885C00F6FB23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEF6BDD61638885C00F6FB23 /* InfoPlist.strings */; };
+		BEF6BDDA1638885C00F6FB23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BDD91638885C00F6FB23 /* main.m */; };
+		BEF6BDDE1638885C00F6FB23 /* MZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BDDD1638885C00F6FB23 /* MZAppDelegate.m */; };
+		BEF6BDE11638885C00F6FB23 /* MZFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BDE01638885C00F6FB23 /* MZFirstViewController.m */; };
+		BEF6BDE31638885C00F6FB23 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF6BDE21638885C00F6FB23 /* first.png */; };
+		BEF6BDE51638885C00F6FB23 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF6BDE41638885C00F6FB23 /* first@2x.png */; };
+		BEF6BDE81638885C00F6FB23 /* MZSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BDE71638885C00F6FB23 /* MZSecondViewController.m */; };
+		BEF6BDEA1638885C00F6FB23 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF6BDE91638885C00F6FB23 /* second.png */; };
+		BEF6BDEC1638885C00F6FB23 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF6BDEB1638885C00F6FB23 /* second@2x.png */; };
+		BEF6BDEF1638885C00F6FB23 /* MZFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF6BDED1638885C00F6FB23 /* MZFirstViewController.xib */; };
+		BEF6BDF21638885D00F6FB23 /* MZSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF6BDF01638885D00F6FB23 /* MZSecondViewController.xib */; };
+		BEF6BE601641E01300F6FB23 /* MZTile.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BE5F1641E01300F6FB23 /* MZTile.m */; };
+		BEF6BE631641E01E00F6FB23 /* MZGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BE621641E01E00F6FB23 /* MZGrid.m */; };
+		BEF6BE691641E0FD00F6FB23 /* UIFont+EightPiecePuzzleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BE681641E0FD00F6FB23 /* UIFont+EightPiecePuzzleAdditions.m */; };
+		BEF6BE6C1641E6A800F6FB23 /* UILabel+EightPiecePuzzleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BE6B1641E6A800F6FB23 /* UILabel+EightPiecePuzzleAdditions.m */; };
+		BEF6BE6F1641E7C000F6FB23 /* MZCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BE6E1641E7C000F6FB23 /* MZCoreDataManager.m */; };
+		BEF6BE721641EAEF00F6FB23 /* EightPiecePuzzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BE701641EAEF00F6FB23 /* EightPiecePuzzle.xcdatamodeld */; };
+		BEF6BE751641EB3000F6FB23 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BE741641EB3000F6FB23 /* Score.m */; };
+		BEF6BE781641EB8A00F6FB23 /* MZScore.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BE771641EB8A00F6FB23 /* MZScore.m */; };
+		BEF6BE7B1641ED1900F6FB23 /* MZScoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6BE7A1641ED1900F6FB23 /* MZScoreCell.m */; };
+		BEF6BE7D1641EE2000F6FB23 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6BE7C1641EE2000F6FB23 /* QuartzCore.framework */; };
+		BEF6BE7F1641EE2E00F6FB23 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6BE7E1641EE2D00F6FB23 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BEF6BDC91638885C00F6FB23 /* EightPiecePuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightPiecePuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF6BDCD1638885C00F6FB23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BEF6BDCF1638885C00F6FB23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEF6BDD11638885C00F6FB23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BEF6BDD51638885C00F6FB23 /* EightPiecePuzzle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EightPiecePuzzle-Info.plist"; sourceTree = "<group>"; };
+		BEF6BDD71638885C00F6FB23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEF6BDD91638885C00F6FB23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEF6BDDB1638885C00F6FB23 /* EightPiecePuzzle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EightPiecePuzzle-Prefix.pch"; sourceTree = "<group>"; };
+		BEF6BDDC1638885C00F6FB23 /* MZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZAppDelegate.h; sourceTree = "<group>"; };
+		BEF6BDDD1638885C00F6FB23 /* MZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZAppDelegate.m; sourceTree = "<group>"; };
+		BEF6BDDF1638885C00F6FB23 /* MZFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZFirstViewController.h; sourceTree = "<group>"; };
+		BEF6BDE01638885C00F6FB23 /* MZFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZFirstViewController.m; sourceTree = "<group>"; };
+		BEF6BDE21638885C00F6FB23 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		BEF6BDE41638885C00F6FB23 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		BEF6BDE61638885C00F6FB23 /* MZSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZSecondViewController.h; sourceTree = "<group>"; };
+		BEF6BDE71638885C00F6FB23 /* MZSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZSecondViewController.m; sourceTree = "<group>"; };
+		BEF6BDE91638885C00F6FB23 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		BEF6BDEB1638885C00F6FB23 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BEF6BDEE1638885C00F6FB23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MZFirstViewController.xib; sourceTree = "<group>"; };
+		BEF6BDF11638885D00F6FB23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MZSecondViewController.xib; sourceTree = "<group>"; };
+		BEF6BE5E1641E01300F6FB23 /* MZTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTile.h; sourceTree = "<group>"; };
+		BEF6BE5F1641E01300F6FB23 /* MZTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTile.m; sourceTree = "<group>"; };
+		BEF6BE611641E01E00F6FB23 /* MZGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZGrid.h; sourceTree = "<group>"; };
+		BEF6BE621641E01E00F6FB23 /* MZGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZGrid.m; sourceTree = "<group>"; };
+		BEF6BE671641E0FD00F6FB23 /* UIFont+EightPiecePuzzleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+EightPiecePuzzleAdditions.h"; sourceTree = "<group>"; };
+		BEF6BE681641E0FD00F6FB23 /* UIFont+EightPiecePuzzleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+EightPiecePuzzleAdditions.m"; sourceTree = "<group>"; };
+		BEF6BE6A1641E6A800F6FB23 /* UILabel+EightPiecePuzzleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+EightPiecePuzzleAdditions.h"; sourceTree = "<group>"; };
+		BEF6BE6B1641E6A800F6FB23 /* UILabel+EightPiecePuzzleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+EightPiecePuzzleAdditions.m"; sourceTree = "<group>"; };
+		BEF6BE6D1641E7C000F6FB23 /* MZCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZCoreDataManager.h; sourceTree = "<group>"; };
+		BEF6BE6E1641E7C000F6FB23 /* MZCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZCoreDataManager.m; sourceTree = "<group>"; };
+		BEF6BE711641EAEF00F6FB23 /* EightPiecePuzzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EightPiecePuzzle.xcdatamodel; sourceTree = "<group>"; };
+		BEF6BE731641EB3000F6FB23 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		BEF6BE741641EB3000F6FB23 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		BEF6BE761641EB8A00F6FB23 /* MZScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZScore.h; sourceTree = "<group>"; };
+		BEF6BE771641EB8A00F6FB23 /* MZScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZScore.m; sourceTree = "<group>"; };
+		BEF6BE791641ED1800F6FB23 /* MZScoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZScoreCell.h; sourceTree = "<group>"; };
+		BEF6BE7A1641ED1900F6FB23 /* MZScoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZScoreCell.m; sourceTree = "<group>"; };
+		BEF6BE7C1641EE2000F6FB23 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BEF6BE7E1641EE2D00F6FB23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEF6BDC61638885C00F6FB23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6BE7F1641EE2E00F6FB23 /* CoreData.framework in Frameworks */,
+				BEF6BE7D1641EE2000F6FB23 /* QuartzCore.framework in Frameworks */,
+				BEF6BDCE1638885C00F6FB23 /* UIKit.framework in Frameworks */,
+				BEF6BDD01638885C00F6FB23 /* Foundation.framework in Frameworks */,
+				BEF6BDD21638885C00F6FB23 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEF6BDBE1638885C00F6FB23 = {
+			isa = PBXGroup;
+			children = (
+				BEF6BDD31638885C00F6FB23 /* EightPiecePuzzle */,
+				BEF6BDCC1638885C00F6FB23 /* Frameworks */,
+				BEF6BDCA1638885C00F6FB23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEF6BDCA1638885C00F6FB23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BDC91638885C00F6FB23 /* EightPiecePuzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEF6BDCC1638885C00F6FB23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BE7E1641EE2D00F6FB23 /* CoreData.framework */,
+				BEF6BE7C1641EE2000F6FB23 /* QuartzCore.framework */,
+				BEF6BDCD1638885C00F6FB23 /* UIKit.framework */,
+				BEF6BDCF1638885C00F6FB23 /* Foundation.framework */,
+				BEF6BDD11638885C00F6FB23 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEF6BDD31638885C00F6FB23 /* EightPiecePuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BE5C1641D47B00F6FB23 /* Controllers */,
+				BEF6BE5B1641D47500F6FB23 /* Views */,
+				BEF6BE5A1641D46600F6FB23 /* Categories */,
+				BEF6BE591641D45600F6FB23 /* Data Manager */,
+				BEF6BE571641D44600F6FB23 /* Models */,
+				BEF6BDDC1638885C00F6FB23 /* MZAppDelegate.h */,
+				BEF6BDDD1638885C00F6FB23 /* MZAppDelegate.m */,
+				BEF6BDE21638885C00F6FB23 /* first.png */,
+				BEF6BDE41638885C00F6FB23 /* first@2x.png */,
+				BEF6BDE91638885C00F6FB23 /* second.png */,
+				BEF6BDEB1638885C00F6FB23 /* second@2x.png */,
+				BEF6BDED1638885C00F6FB23 /* MZFirstViewController.xib */,
+				BEF6BDF01638885D00F6FB23 /* MZSecondViewController.xib */,
+				BEF6BDD41638885C00F6FB23 /* Supporting Files */,
+			);
+			path = EightPiecePuzzle;
+			sourceTree = "<group>";
+		};
+		BEF6BDD41638885C00F6FB23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BDD51638885C00F6FB23 /* EightPiecePuzzle-Info.plist */,
+				BEF6BDD61638885C00F6FB23 /* InfoPlist.strings */,
+				BEF6BDD91638885C00F6FB23 /* main.m */,
+				BEF6BDDB1638885C00F6FB23 /* EightPiecePuzzle-Prefix.pch */,
+				BEF6BE701641EAEF00F6FB23 /* EightPiecePuzzle.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEF6BE571641D44600F6FB23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BE5D1641D4B300F6FB23 /* Core Data */,
+				BEF6BE761641EB8A00F6FB23 /* MZScore.h */,
+				BEF6BE771641EB8A00F6FB23 /* MZScore.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BEF6BE591641D45600F6FB23 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BE6D1641E7C000F6FB23 /* MZCoreDataManager.h */,
+				BEF6BE6E1641E7C000F6FB23 /* MZCoreDataManager.m */,
+			);
+			name = "Data Manager";
+			sourceTree = "<group>";
+		};
+		BEF6BE5A1641D46600F6FB23 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BE671641E0FD00F6FB23 /* UIFont+EightPiecePuzzleAdditions.h */,
+				BEF6BE681641E0FD00F6FB23 /* UIFont+EightPiecePuzzleAdditions.m */,
+				BEF6BE6A1641E6A800F6FB23 /* UILabel+EightPiecePuzzleAdditions.h */,
+				BEF6BE6B1641E6A800F6FB23 /* UILabel+EightPiecePuzzleAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		BEF6BE5B1641D47500F6FB23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BE5E1641E01300F6FB23 /* MZTile.h */,
+				BEF6BE5F1641E01300F6FB23 /* MZTile.m */,
+				BEF6BE611641E01E00F6FB23 /* MZGrid.h */,
+				BEF6BE621641E01E00F6FB23 /* MZGrid.m */,
+				BEF6BE791641ED1800F6FB23 /* MZScoreCell.h */,
+				BEF6BE7A1641ED1900F6FB23 /* MZScoreCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BEF6BE5C1641D47B00F6FB23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BDDF1638885C00F6FB23 /* MZFirstViewController.h */,
+				BEF6BDE01638885C00F6FB23 /* MZFirstViewController.m */,
+				BEF6BDE61638885C00F6FB23 /* MZSecondViewController.h */,
+				BEF6BDE71638885C00F6FB23 /* MZSecondViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BEF6BE5D1641D4B300F6FB23 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BE731641EB3000F6FB23 /* Score.h */,
+				BEF6BE741641EB3000F6FB23 /* Score.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEF6BDC81638885C00F6FB23 /* EightPiecePuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF6BDF51638885D00F6FB23 /* Build configuration list for PBXNativeTarget "EightPiecePuzzle" */;
+			buildPhases = (
+				BEF6BDC51638885C00F6FB23 /* Sources */,
+				BEF6BDC61638885C00F6FB23 /* Frameworks */,
+				BEF6BDC71638885C00F6FB23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EightPiecePuzzle;
+			productName = EightPiecePuzzle;
+			productReference = BEF6BDC91638885C00F6FB23 /* EightPiecePuzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEF6BDC01638885C00F6FB23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MZ;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = BEF6BDC31638885C00F6FB23 /* Build configuration list for PBXProject "EightPiecePuzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEF6BDBE1638885C00F6FB23;
+			productRefGroup = BEF6BDCA1638885C00F6FB23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF6BDC81638885C00F6FB23 /* EightPiecePuzzle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEF6BDC71638885C00F6FB23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6BDD81638885C00F6FB23 /* InfoPlist.strings in Resources */,
+				BEF6BDE31638885C00F6FB23 /* first.png in Resources */,
+				BEF6BDE51638885C00F6FB23 /* first@2x.png in Resources */,
+				BEF6BDEA1638885C00F6FB23 /* second.png in Resources */,
+				BEF6BDEC1638885C00F6FB23 /* second@2x.png in Resources */,
+				BEF6BDEF1638885C00F6FB23 /* MZFirstViewController.xib in Resources */,
+				BEF6BDF21638885D00F6FB23 /* MZSecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEF6BDC51638885C00F6FB23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6BDDA1638885C00F6FB23 /* main.m in Sources */,
+				BEF6BDDE1638885C00F6FB23 /* MZAppDelegate.m in Sources */,
+				BEF6BDE11638885C00F6FB23 /* MZFirstViewController.m in Sources */,
+				BEF6BDE81638885C00F6FB23 /* MZSecondViewController.m in Sources */,
+				BEF6BE601641E01300F6FB23 /* MZTile.m in Sources */,
+				BEF6BE631641E01E00F6FB23 /* MZGrid.m in Sources */,
+				BEF6BE691641E0FD00F6FB23 /* UIFont+EightPiecePuzzleAdditions.m in Sources */,
+				BEF6BE6C1641E6A800F6FB23 /* UILabel+EightPiecePuzzleAdditions.m in Sources */,
+				BEF6BE6F1641E7C000F6FB23 /* MZCoreDataManager.m in Sources */,
+				BEF6BE721641EAEF00F6FB23 /* EightPiecePuzzle.xcdatamodeld in Sources */,
+				BEF6BE751641EB3000F6FB23 /* Score.m in Sources */,
+				BEF6BE781641EB8A00F6FB23 /* MZScore.m in Sources */,
+				BEF6BE7B1641ED1900F6FB23 /* MZScoreCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEF6BDD61638885C00F6FB23 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF6BDD71638885C00F6FB23 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BEF6BDED1638885C00F6FB23 /* MZFirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF6BDEE1638885C00F6FB23 /* en */,
+			);
+			name = MZFirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		BEF6BDF01638885D00F6FB23 /* MZSecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF6BDF11638885D00F6FB23 /* en */,
+			);
+			name = MZSecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEF6BDF31638885D00F6FB23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEF6BDF41638885D00F6FB23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEF6BDF61638885D00F6FB23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightPiecePuzzle/EightPiecePuzzle-Prefix.pch";
+				INFOPLIST_FILE = "EightPiecePuzzle/EightPiecePuzzle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BEF6BDF71638885D00F6FB23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightPiecePuzzle/EightPiecePuzzle-Prefix.pch";
+				INFOPLIST_FILE = "EightPiecePuzzle/EightPiecePuzzle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEF6BDC31638885C00F6FB23 /* Build configuration list for PBXProject "EightPiecePuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF6BDF31638885D00F6FB23 /* Debug */,
+				BEF6BDF41638885D00F6FB23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF6BDF51638885D00F6FB23 /* Build configuration list for PBXNativeTarget "EightPiecePuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF6BDF61638885D00F6FB23 /* Debug */,
+				BEF6BDF71638885D00F6FB23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEF6BE701641EAEF00F6FB23 /* EightPiecePuzzle.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEF6BE711641EAEF00F6FB23 /* EightPiecePuzzle.xcdatamodel */,
+			);
+			currentVersion = BEF6BE711641EAEF00F6FB23 /* EightPiecePuzzle.xcdatamodel */;
+			path = EightPiecePuzzle.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEF6BDC01638885C00F6FB23 /* Project object */;
+}
